@@ -1,0 +1,15 @@
+﻿@model WebAppNexio.Models.Person.Result
+
+
+
+<h2>WYNIKI</h2>
+
+
+@if(Model.Success)
+{
+    <strong>@Model.HisName pasuje do pani @Model.HerName</strong>
+}
+else
+{
+    <strong>@Model.HisName nie pasuje do pani @Model.HerName</strong>
+}

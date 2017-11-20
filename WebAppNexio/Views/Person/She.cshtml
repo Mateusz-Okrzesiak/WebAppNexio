@@ -1,0 +1,20 @@
+﻿@model WebAppNexio.Models.Person.Person
+@{
+    ViewBag.Title = "She";
+}
+
+<h2>She</h2>
+
+
+
+@using (Ajax.BeginForm("She", new AjaxOptions()
+{
+    UpdateTargetId = "person-section",
+    HttpMethod = "Post",
+    InsertionMode = InsertionMode.Replace
+}))
+{
+    @Html.AntiForgeryToken()
+    @Html.Partial("_Person")
+
+}
